@@ -1,14 +1,13 @@
 import React from 'react';
-import icon from '../../assets/img/compass_icon.svg';
 import './Popup.css';
+import Loading from '../../components/loading/loading.js';
+
+var loading_status = true;
 
 const Popup = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={icon} className="App-logo" alt="icon" />
-        <h1 className="App-title">Dimension</h1>
-      </header>
+      <Loading display={loading_status ? 1 : 0} />
     </div>
   );
 };
