@@ -17,14 +17,13 @@ import Login from '../../components/Login/login.js';
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
-var loading_status = true;
 
 const Popup = () => {
   const [user] = useAuthState(auth);
 
   return (
     <div className="App">
-      {user ? (loading_status ? <Loading /> : <div></div>) : <Login />}
+      {user ? <Loading /> : <Login />}
     </div>
   );
 };
