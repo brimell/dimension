@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+import firebaseinit from '../../components/firebaseinit.js';
+
 import Popup from './Popup';
 import './index.css';
 

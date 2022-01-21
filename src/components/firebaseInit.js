@@ -1,4 +1,3 @@
-import { printLine } from './modules/print';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
@@ -12,6 +11,3 @@ firebase.initializeApp({
     messagingSenderId: '412535312519',
     appId: '1:412535312519:web:3e3b861c66fe99c13ee822',
   });
-
-
-printLine("Print Module...");
