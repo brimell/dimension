@@ -1,11 +1,11 @@
 {
-  "name": "Dimension",
+  "name": "dimension",
   "version": "4.2.0",
   "description": "Dimension",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lxieyang/chrome-extension-boilerplate-react.git"
+    "url": "https://github.com/Raaydon/dimension.git"
   },
   "scripts": {
     "build": "node utils/build.js",
