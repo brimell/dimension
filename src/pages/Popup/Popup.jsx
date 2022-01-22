@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Popup.css';
 
 import firebase from 'firebase/compat/app';
@@ -10,7 +10,7 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 import Loading from '../../components/loading/loading.js';
 import Login from '../../components/Login/login.js';
-
+import Game from '../../components/Game/game.js';
 
 
 
@@ -20,10 +20,15 @@ const firestore = firebase.firestore();
 
 const Popup = () => {
   const [user] = useAuthState(auth);
+  const [loadingStatus, setLoadingStatus] = useState(true);
 
+  useEffect(()=>{
+    setTimeout(() => { setLoadingStatus(false)}, 1000);
+  }, [])
+  
   return (
     <div className="App">
-      {user ? <Loading /> : <Login />}
+      {user ? <Game /> : (loadingStatus ? <Loading /> : <Login />)}
     </div>
   );
 };
