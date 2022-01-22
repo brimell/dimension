@@ -65,9 +65,12 @@ const Login = () => {
 
   return (
     <div className="Login-container">
+      <img src={icon} className="App-logo" alt="icon" />
+      <div className="topBar">
+        <h1 className="App-title">Direction</h1>
+      </div>
       <header className="App-header">
-        <img src={icon} className="App-logo" alt="icon" />
-        <h1 className="App-title">Sign In</h1>
+        <h1 className="App-subtitle">Sign In</h1>
       </header>
       <CustomTextField inputRef={emailRef} className="input-div" id="email-input" label="Email..." />
       <CustomTextField inputRef={passwordRef} className="input-div" id="password-input" color='success' type="password" label="Password..." />

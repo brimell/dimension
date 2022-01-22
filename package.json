@@ -1,10 +1,10 @@
 {
-  "name": "dimension",
+  "name": "direction",
   "version": "4.2.0",
-  "description": "Dimension",
+  "description": "Direction",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Raaydon/dimension.git"
+    "url": "https://github.com/Raaydon/direction.git"
   },
   "scripts": {
     "build": "node utils/build.js",
