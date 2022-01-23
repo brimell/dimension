@@ -8,6 +8,7 @@ const loading = () => {
   return (
     <div className="Game-container">
       <Navbar toggle={false} title="Direction" />
+      <h1>test</h1>
     </div>
   );
 };

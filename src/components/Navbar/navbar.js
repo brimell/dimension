@@ -5,6 +5,8 @@ import icon from '../../assets/img/compass_icon.svg';
 import './navbar.css';
 import $ from 'jquery'; 
 
+import HandleNav from '../../utils/HandleNav';
+
 export default function navbar(props) {
 
     // ---------Responsive-navbar-active-animation-----------
@@ -35,6 +37,8 @@ export default function navbar(props) {
                 "height": activeWidthNewAnimHeight + "px",
                 "width": activeWidthNewAnimWidth + "px"
             });
+            console.log($(this))
+            // HandleNav($(this))
         });
     }
     $(document).ready(function(){
