@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './game.css';
 import Navbar from '../Navbar/navbar';
 import $ from 'jquery';
+import Research from './Research/Research'
+import Map from './Map/Map'
+import Home from './Home/Home'
 
 const Game = () => { 
 
@@ -16,7 +19,7 @@ const Game = () => {
   return (
     <div className="Game-container">
       <Navbar toggle={false} title="Direction" />
-      <h1>{currentTab}</h1>
+      {if (currentTab === 'home') {<Home />} else if (currentTab === 'research') {<Research />} else if (currentTab === 'map') {<Map />}}
     </div>
   );
 };
