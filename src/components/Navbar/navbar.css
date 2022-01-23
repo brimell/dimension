@@ -7,6 +7,7 @@ i {
 	top: 0;
 	left: 0;
 	position: absolute;
+	width: 100%;
 }
 .navbar-logo{
 	color: #fff;
@@ -35,6 +36,7 @@ i {
 	float: left;
 }
 #navbarSupportedContent ul li a{
+	cursor: pointer;
 	color: rgb(209, 209, 209);
     text-decoration: none;
     font-size: 15px;

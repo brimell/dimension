@@ -68,7 +68,7 @@ export default function navbar(props) {
                     <a className="nav-link" ><i className="far fa-address-book"></i>Research</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" ><i className="far fa-clone"></i>Components</a>
+                    <a className="nav-link" ><i className="far fa-clone"></i>Map</a>
                 </li>
             </ul>
         </div>
