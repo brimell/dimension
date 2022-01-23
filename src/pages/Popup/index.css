@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background: var(--bg);
   width: 400px;
   height: 500px;
   margin: 0;
