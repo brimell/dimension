@@ -5,7 +5,6 @@ import icon from '../../assets/img/compass_icon.svg';
 import './navbar.css';
 import $ from 'jquery'; 
 
-import HandleNav from '../../utils/HandleNav';
 
 export default function navbar(props) {
 
@@ -37,8 +36,6 @@ export default function navbar(props) {
                 "height": activeWidthNewAnimHeight + "px",
                 "width": activeWidthNewAnimWidth + "px"
             });
-            console.log($(this))
-            // HandleNav($(this))
         });
     }
     $(document).ready(function(){
@@ -64,14 +61,14 @@ export default function navbar(props) {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
-            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-                <li className="nav-item active">
+            <div className="hori-selector"><div className="left"></div><div className="right"></div></div>
+                <li className="nav-item active" id='home'>
                     <a className="nav-link" >Home</a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" id='research'>
                     <a className="nav-link" >Research</a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" id='map'>
                     <a className="nav-link" >Map</a>
                 </li>
             </ul>
