@@ -61,10 +61,10 @@ export default function navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
                 <div className="hori-selector"></div>
-                <li className="nav-item">
+                <li className="nav-item active">
                     <a className="nav-link" ><i className="fas fa-tachometer-alt"></i>Home</a>
                 </li>
-                <li className="nav-item active">
+                <li className="nav-item">
                     <a className="nav-link" ><i className="far fa-address-book"></i>Research</a>
                 </li>
                 <li className="nav-item">
