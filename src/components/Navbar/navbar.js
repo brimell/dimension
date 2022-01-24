@@ -11,7 +11,7 @@ export default function navbar(props) {
     // ---------Responsive-navbar-active-animation-----------
     function test(){
         var tabsNewAnim = $('#navbarSupportedContent');
-        var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+        // var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
         var activeItemNewAnim = tabsNewAnim.find('.active');
         var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
         var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
@@ -37,6 +37,8 @@ export default function navbar(props) {
                 "width": activeWidthNewAnimWidth + "px"
             });
         });
+        console.log($('.navbar').style.height)
+        document.documentElement.style.setProperty('--navbar-height', $('.navbar').style.height);
     }
     $(document).on('ready', function(){
         setTimeout(function(){ test(); });
