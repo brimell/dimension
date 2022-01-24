@@ -3,7 +3,7 @@ import './game.css';
 import Navbar from '../Navbar/navbar';
 import $ from 'jquery';
 import Research from './Research/Research'
-import Map from './Map/Map'
+import Map from './Map/Map.js'
 import Home from './Home/Home'
 
 const Game = () => { 
@@ -14,12 +14,14 @@ const Game = () => {
   $("#navbarSupportedContent").on("click","li",function(e){
     setCurrentTab($(this)[0].id)
   })
-  
+  function renderPage(page) {
+    if (page === 'home') { return <Home />} else if (page === 'research') { return <Research />} else if (page === 'map') { return <Map />}
+  }
 
   return (
     <div className="Game-container">
       <Navbar toggle={false} title="Direction" />
-      {if (currentTab === 'home') {<Home />} else if (currentTab === 'research') {<Research />} else if (currentTab === 'map') {<Map />}}
+      {renderPage(currentTab)}
     </div>
   );
 };
