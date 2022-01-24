@@ -1,7 +1,7 @@
 import React from 'react'
 import Cards from '../../Cards/Cards'
 import './Home.css'
-
+import $ from 'jquery'
 export default function Home() {
 
     const data = [{
@@ -13,8 +13,23 @@ export default function Home() {
         title: 'another',
         image: false,
         text: 'some more text',
+    },
+    {
+        title: 'another2',
+        image: false,
+        text: 'some more text',
+    },
+    {
+        title: 'another3',
+        image: false,
+        text: 'some more text',
+    },
+    {
+        title: 'another4',
+        image: false,
+        text: 'some more text',
     }
-]
+    ]
 
     return (
         <div className="Home-container">

@@ -3,13 +3,13 @@
   --bg-secondary: #1d1d1d;
   --card-bg: #313131;
   --card-container-bg: #1d1d1d00;
-  --navbar-height: 115px;
+  /* --navbar-height: 115px; */
 }
 
 ::-webkit-scrollbar { width: 8px; height: 3px;}
-::-webkit-scrollbar-track {  background-color: #646464;}
-::-webkit-scrollbar-track-piece { background-color: #000;}
-::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-track {  background-color: var(--card-bg);}
+::-webkit-scrollbar-track-piece { background-color: var(--bg-secondary)}
+::-webkit-scrollbar-thumb { height: 50px; background-color: var(--card-bg); border-radius: 3px;}
 
 body {
   color: white;

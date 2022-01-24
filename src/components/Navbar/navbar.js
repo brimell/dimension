@@ -37,11 +37,10 @@ export default function navbar(props) {
                 "width": activeWidthNewAnimWidth + "px"
             });
         });
-        console.log($('.navbar').style.height)
-        document.documentElement.style.setProperty('--navbar-height', $('.navbar').style.height);
     }
     $(document).on('ready', function(){
         setTimeout(function(){ test(); });
+        console.log('test')
     });
     $(window).on('resize', function(){
         setTimeout(function(){ test(); }, 500);
