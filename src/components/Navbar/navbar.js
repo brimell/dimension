@@ -38,7 +38,7 @@ export default function navbar(props) {
             });
         });
     }
-    $(document).ready(function(){
+    $(document).on('ready', function(){
         setTimeout(function(){ test(); });
     });
     $(window).on('resize', function(){
