@@ -65,7 +65,7 @@ const Login = () => {
 
   return (
     <div className="Login-container">
-      <img src={icon} className="App-logo" alt="icon" />
+      <img src={icon} className="App-logo" id='Login-App-logo' alt="icon" />
       <div className="topBar">
         <h1 className="App-title">Direction</h1>
       </div>

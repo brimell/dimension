@@ -1,6 +1,8 @@
 :root {
   --bg: black;
   --bg-secondary: #1d1d1d;
+  --card-bg: #313131;
+  --card-container-bg: #1d1d1d00;
 }
 
 body {
