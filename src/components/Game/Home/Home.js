@@ -5,7 +5,8 @@ import $ from 'jquery'
 export default function Home() {
 
     const data = [{
-        title: 'Flex',
+        title: 'Farm',
+        cost: 15,
         image: false,
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, recusandae?',
     },
