@@ -10,6 +10,7 @@ export default function Card(props) {
     <div className="Card-container">
       {data.map((card) => 
         <div className="card" key={card.title}>
+        {card.image && <img src={card.image} alt="" className="card-image" />}
           <div className="card-content">
             <h1 className="card-title">{card.title}</h1>
             <p className="card-text">{card.text}</p>

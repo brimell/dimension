@@ -26,3 +26,9 @@
     font-weight: bold;
     margin: 0;
 }
+
+.card-image {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+}

@@ -1,32 +1,36 @@
 import React from 'react'
 import Cards from '../../Cards/Cards'
 import './Home.css'
-import $ from 'jquery'
+import farmImg from '../../../assets/img/farm.png'
 export default function Home() {
 
     const data = [{
         title: 'Farm',
         cost: 15,
-        image: false,
+        image: farmImg,
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, recusandae?',
     },
     {
-        title: 'another',
+        title: 'Automated Farm',
+        cost: 100,
         image: false,
         text: 'some more text',
     },
     {
-        title: 'another2',
+        title: 'Carpenter',
+        cost: 1100,
         image: false,
         text: 'some more text',
     },
     {
-        title: 'another3',
+        title: 'Mine',
+        cost: 12000,
         image: false,
         text: 'some more text',
     },
     {
-        title: 'another4',
+        title: 'Smithy',
+        cost: 130000,
         image: false,
         text: 'some more text',
     }
